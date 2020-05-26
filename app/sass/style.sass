@@ -1,0 +1,89 @@
+@mixin font($font-family, $font-folder) 
+	@font-face 
+		font-family: $font-family
+		src: url($font-folder+$font-family+'.ttf')
+		// src: url($font-file+'.eot?#iefix') format('embedded-opentype'),url($font-file+'.woff') format('woff'),url($font-file+'Regular.ttf') format('truetype')
+		// font-weight: normal
+		// font-style: normal
+		font-size: 10pt
+		unicode-range: U+0000-07FF
+		font-display: block
+
+
+// @include font('TriviaSans', '/fonts/TriviaSans', 'Regular');
+@include font('TriviaSansRegular', 'https://tikvik.github.io/rcnkskweb/dist/fonts/')
+@include font('TriviaSansMedium', 'https://tikvik.github.io/rcnkskweb/dist/fonts/')
+
+*
+	box-sizing: border-box
+body
+	background: black
+	font-family: 'Nothing You Could Do', cursive
+	font-family: 'Permanent Marker', cursive
+	font-family: 'Homemade Apple', cursive
+	width: 100%
+	height: 100%
+	font-size: 10rem
+	color: white
+	padding: 2rem 10vw 5rem 10vw
+
+
+@keyframes flicker 
+	0% 
+		opacity: 1
+  
+	100% 
+		opacity: .3
+  
+
+
+// body
+// 	animation: flicker 2s ease-in-out alternate infinite
+	
+
+.footer
+	position: absolute
+	bottom: 0
+	right: 0
+
+
+
+
+/* Selects the second <li> element in a list */
+ul
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	
+	li
+		&:hover
+			// font-family: 'Permanent Marker', cursive
+			transform: translate(-2em,2em)
+			color: #F500FF
+			&:after
+				content: "urz"
+				position: absolute
+				// right: 5rem
+
+		font-family: 'Nothing You Could Do', cursive
+		list-style: none
+		padding: 0rem 5rem
+		transition: transform 2s ease
+		height: 5rem
+
+	li
+		&:nth-child(2)
+			&:hover
+				font-family: 'Nothing You Could Do', cursive
+				transform: translate(-1em,2em)
+				color: #00FF00
+			font-family: 'Permanent Marker', cursive
+	li
+		&:nth-child(3)
+			font-family: 'Homemade Apple', cursive
+	li
+		&:nth-child(10)
+			font-family: 'Nothing You Could Do', cursive
+	li
+		&:last-child
+			font-family: 'Permanent Marker', cursive

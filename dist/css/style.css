@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "TriviaSansRegular";
+  src: url("https://tikvik.github.io/rcnkskweb/dist/fonts/TriviaSansRegular.ttf");
+  font-size: 10pt;
+  unicode-range: U+0000-07FF;
+  font-display: block;
+}
+@font-face {
+  font-family: "TriviaSansMedium";
+  src: url("https://tikvik.github.io/rcnkskweb/dist/fonts/TriviaSansMedium.ttf");
+  font-size: 10pt;
+  unicode-range: U+0000-07FF;
+  font-display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: "Nothing You Could Do", cursive;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Homemade Apple", cursive;
+  width: 100%;
+  height: 100%;
+  font-size: 10rem;
+  color: white;
+  padding: 2rem 10vw 5rem 10vw;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Selects the second <li> element in a list */
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul li {
+  font-family: "Nothing You Could Do", cursive;
+  list-style: none;
+  padding: 0rem 5rem;
+  transition: transform 2s ease;
+  height: 5rem;
+}
+ul li:hover {
+  transform: translate(-2em, 2em);
+  color: #F500FF;
+}
+ul li:hover:after {
+  content: "urz";
+  position: absolute;
+}
+ul li:nth-child(2) {
+  font-family: "Permanent Marker", cursive;
+}
+ul li:nth-child(2):hover {
+  font-family: "Nothing You Could Do", cursive;
+  transform: translate(-1em, 2em);
+  color: #00FF00;
+}
+ul li:nth-child(3) {
+  font-family: "Homemade Apple", cursive;
+}
+ul li:nth-child(10) {
+  font-family: "Nothing You Could Do", cursive;
+}
+ul li:last-child {
+  font-family: "Permanent Marker", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */
