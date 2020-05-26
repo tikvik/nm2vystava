@@ -26,6 +26,7 @@ body {
   font-size: 10rem;
   color: white;
   padding: 2rem 10vw 5rem 10vw;
+  white-space: none;
 }
 
 @keyframes flicker {
@@ -57,11 +58,6 @@ ul li {
 }
 ul li:hover {
   transform: translate(-2em, 2em);
-  color: #F500FF;
-}
-ul li:hover:after {
-  content: "urz";
-  position: absolute;
 }
 ul li:nth-child(2) {
   font-family: "Permanent Marker", cursive;
@@ -72,6 +68,12 @@ ul li:nth-child(2):hover {
   color: #00FF00;
 }
 ul li:nth-child(3) {
+  font-family: "Homemade Apple", cursive;
+}
+ul li:nth-child(7) {
+  font-family: "Homemade Apple", cursive;
+}
+ul li:nth-child(12) {
   font-family: "Homemade Apple", cursive;
 }
 ul li:nth-child(10) {
