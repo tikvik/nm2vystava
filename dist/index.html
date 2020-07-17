@@ -9,26 +9,22 @@
 	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="body" >
 	<ul>
-		<li>A</li>
-		<li>C</li>
-		<li>D</li>
-		<li>G</li>
-		<li>H</li>
-		<li>F</li>
-		<li>W</li>
-		<li>f</li>
-		<li>j</li>
-		<li>I</li>
-		<li>D</li>
-		<li>B</li>
-		<li>D</li>
-		<li>B</li>
-		<li>O</li>
-		<li>F</li>
-		<li>R</li>
-		<li>W</li>
+<li onmouseover="changeBg('whale.jpg')" onmouseout="changeColorBg('transparent')">D</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">D</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">H</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">J</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">L</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">M</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">M</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">M</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">N</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">P</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">S</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">T</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">V</li>
+<li onmouseover="changeColorBg('red')" onmouseout="changeColorBg('transparent')">V</li>		
 	</ul>
 
 <!-- <div class="footer">
@@ -40,5 +36,14 @@
 	    </g>
 	</svg>
 </div> -->
+<script type="text/javascript">
+	
+	function changeBg(img) {
+		var e = document.getElementById('body');
+		// document.bgColor=color;
+		e.style.backgroundImage = 'url('+img+')';
+		
+	}
+</script>
 </body>
 </html>

@@ -16,8 +16,14 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   background: black;
+  height: 100%;
+}
+
+body {
+  background-image: url("");
+  margin-top: 0;
   font-family: "Nothing You Could Do", cursive;
   font-family: "Permanent Marker", cursive;
   font-family: "Homemade Apple", cursive;
@@ -65,6 +71,9 @@ ul li:hover:after {
   content: "anda";
   position: absolute;
   right: -17rem;
+}
+ul li:hover:after body {
+  background: red !important;
 }
 ul li:nth-child(2) {
   font-family: "Permanent Marker", cursive;
